@@ -4,18 +4,17 @@ public class LoopFor {
 
     public static void main(String[] args) {
 
-            Carneirinho c = new Carneirinho();
+        Carneirinho c = new Carneirinho();
 
-            c.setVoltas(10);
-            c.contar();
-
+        c.setVoltas(10);
+        c.contar();
     }
 }
 
 class Carneirinho{
 
-    int carneiro = 0;
-    int numero;
+    private int carneiro = 0;
+    private int numero;
 
     public void setVoltas(int numero){
         this.numero = numero;

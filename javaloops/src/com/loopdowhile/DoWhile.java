@@ -28,6 +28,11 @@ class CalculadoraSoma{
             System.out.print("\nDigite o segundo número inteiro: ");
             n2 = entrada.nextInt();
 
+            int r = n1 + n2;
+
+            System.out.printf("\nO resultado da soma de %d + %d é %d.\n", n1, n2, r);
+            System.out.println("----------------------------------------------------");
+
             System.out.print("\nDigite [1] para somar novamente: ");
             int res = entrada.nextInt();
 
@@ -39,12 +44,9 @@ class CalculadoraSoma{
                 resposta = false;
             }
 
-            int r = n1 + n2;
-
-            System.out.printf("\nO resultado da soma de %d + %d é %d.\n", n1, n2, r);
-            System.out.println("----------------------------------------------------");
-
         } while (resposta == true);
+
+        System.out.println("Saindo do programa");
 
     }
 }

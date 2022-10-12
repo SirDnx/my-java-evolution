@@ -5,7 +5,7 @@ public class LoopWhile {
     public static void main(String[] args) {
 
         Produtos p = new Produtos();
-        p.setQtdProdutos(60);
+        p.setQtdProdutos(20);
         p.registrar();
 
     }
@@ -13,8 +13,8 @@ public class LoopWhile {
 
 class Produtos {
 
-    int qtdProduto;
-    int registro = 0;
+    private int qtdProduto;
+    private int registro = 0;
 
     public void setQtdProdutos(int numero){
         qtdProduto = numero;
