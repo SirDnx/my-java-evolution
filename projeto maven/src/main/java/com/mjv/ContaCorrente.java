@@ -1,18 +1,8 @@
 package com.mjv;
 
-public class ContaCorrente {
+public class ContaCorrente extends Conta {
 
-     private Double saldo = 0.0;
-
-     public void depositar(Double valor){
-         this.saldo += valor;
-    }
-
-    public void sacar(Double valor) {
-        this.saldo -= valor;
-    }
-
-    public Double getSaldo(){
-         return saldo;
+    public ContaCorrente(Cliente cliente) {
+        super(cliente);
     }
 }
