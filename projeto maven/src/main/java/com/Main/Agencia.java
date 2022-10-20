@@ -4,12 +4,13 @@ import com.mjv.Banco;
 import com.mjv.Cliente;
 import com.mjv.ContaCorrente;
 import com.mjv.ContaPoupanca;
+import com.validations.ContaInexistenteException;
 import com.validations.ContaInvalidaException;
 import com.validations.SaldoInsuficienteException;
 import com.validations.ValorInvalidoException;
 
 public class Agencia {
-    public static void main(String[] args) throws ValorInvalidoException, SaldoInsuficienteException, ContaInvalidaException {
+    public static void main(String[] args) throws ValorInvalidoException, SaldoInsuficienteException, ContaInvalidaException, ContaInexistenteException {
 
         System.out.println("\n\n-------------------------------------------José-------------------------------------------\n\n");
 
@@ -17,6 +18,7 @@ public class Agencia {
         ContaCorrente contaCorrenteJose = new ContaCorrente(jose);
         contaCorrenteJose.depositar(500d);
         contaCorrenteJose.sacar(200d);
+        contaCorrenteJose = null;
 
         System.out.println("\n\n-------------------------------------------Antonio-------------------------------------------\n\n");
 
@@ -34,10 +36,16 @@ public class Agencia {
 
         System.out.println("\n\n-------------------------------------------Inserindo contas no banco e pesquisando-------------------------------------------\n\n");
 
-        Banco b = new Banco(contaCorrenteJose);
+
+        Banco b = new Banco();
+        b.inserirNovaConta(contaCorrenteJose);
         b.inserirNovaConta(contaPoupancaAntonio);
         b.inserirNovaConta(contaPoupancaMaria);
 
-        b.pesquisarConta(contaCorrenteJose);
+        System.out.println("\n---------------------------usando método pesquisar conta, passando o número da conta 2----------------------------\n");
+
+
+        b.pesquisarConta(2);
+
     }
 }
