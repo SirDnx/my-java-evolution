@@ -5,7 +5,6 @@ import java.util.Map;
 
 import com.validations.ContaInexistenteException;
 import com.validations.ContaInvalidaException;
-import static java.lang.String.valueOf;
 
 public class Banco {
 
@@ -44,7 +43,7 @@ public class Banco {
             "Títular: " + this.conta.getCliente().getNome() + "\n" +
             "Agencia: " + this.conta.getAgencia() + "\n" +
             "Numero: " + this.conta.getNumero() + "\n" +
-            "Saldo: " + this.conta.getSaldo();
+            String.format("Saldo: %,.2f", this.conta.getSaldo());
     }
 
     public void acessarLista(){

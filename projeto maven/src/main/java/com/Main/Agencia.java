@@ -18,7 +18,6 @@ public class Agencia {
         ContaCorrente contaCorrenteJose = new ContaCorrente(jose);
         contaCorrenteJose.depositar(500d);
         contaCorrenteJose.sacar(200d);
-        contaCorrenteJose = null;
 
         System.out.println("\n\n-------------------------------------------Antonio-------------------------------------------\n\n");
 
@@ -26,7 +25,7 @@ public class Agencia {
         ContaPoupanca contaPoupancaAntonio = new ContaPoupanca(antonio);
         contaPoupancaAntonio.depositar(953.25);
         contaPoupancaAntonio.sacar(267.14);
-
+        contaPoupancaAntonio.renderJuros(3);
         System.out.println("\n\n-------------------------------------------Maria-------------------------------------------\n\n");
 
         Cliente maria = new Cliente("Maria","7894562548","3654125");
@@ -41,6 +40,7 @@ public class Agencia {
         b.inserirNovaConta(contaCorrenteJose);
         b.inserirNovaConta(contaPoupancaAntonio);
         b.inserirNovaConta(contaPoupancaMaria);
+
 
         System.out.println("\n---------------------------usando método pesquisar conta, passando o número da conta 2----------------------------\n");
 
