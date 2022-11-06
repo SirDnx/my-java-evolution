@@ -7,12 +7,10 @@ public class Cliente {
     private String nome;
     private String cpf;
     private Date dataNascimento;
-    private String rg;
 
-    public Cliente(String nome, String cpf, String rg){
+    public Cliente(String nome, String cpf){
         this.nome = nome;
         this.cpf = cpf;
-        this.rg = rg;
     }
 
     public String getNome(){
