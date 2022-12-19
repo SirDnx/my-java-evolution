@@ -1,22 +1,22 @@
 package classes.estudos;
 
 class Carro{
-    // classe que será usada como tipo de referência
+    // classe que sera usada como tipo de referencia
 }
 
 public class ClasseAtributosComValoresPadrao {
 
-    //todos os tipos compatíveis com numéricos, tem valor default 0
+    //todos os tipos compativeis com numero, tem valor default 0
 
     private int idade; //valor default 0
     private double salario; //valor default 0.0
-    private char sexo; //possui valor padrão em branco, equivalente a 0
-    private Carro carro; //valor padrão null
-    private String nome; //tipo de classe, valor padrão null
-    private boolean ativo; //valor padrão false
+    private char sexo; //possui valor padrao em branco, equivalente a 0
+    private Carro carro; //valor padrao null
+    private String nome; //tipo de classe, valor padrao null
+    private boolean ativo; //valor padrao false
 
-    private int[] novo_array = new int[5]; //possui valor padrão de acordo com o tipo que foi definido, as cem posições
-    //nesse caso, serão iguais a 0
+    private int[] novo_array = new int[5]; //possui valor padrao de acordo com o tipo que foi definido, as cem posicoes
+    //nesse caso, serao iguais a 0
 
 
     public int[] getNovo_array() {

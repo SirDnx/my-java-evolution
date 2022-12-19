@@ -7,11 +7,11 @@ public class TipoMovimento {
     public void pegarTipoServico(ExEnum exenum){
 
         if(exenum.equals(CREDITO)){
-            System.out.println("Crédito!");
+            System.out.println("credito!");
         }
 
         if(exenum.equals(DEBITO)){
-            System.out.println("Débito!");
+            System.out.println("debito!");
         }
 
     }

@@ -2,7 +2,7 @@ package classes.estudos;
 
 public class ClasseNotacaoCientifica {
 
-    //Em Java não existe signed e unsigned. Valores que só são positivos ou negativos
+    //Em Java nao existe signed e unsigned. Valores que sao so positivos ou negativos
 
     private double d2 = 3.5E2; //equivalente a 3,5x10^2 ou 3,5x100 = 350
 

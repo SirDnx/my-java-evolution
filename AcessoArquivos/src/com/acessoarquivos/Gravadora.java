@@ -14,14 +14,15 @@ public class Gravadora {
 
         try{
 
-            //stream é uma conexão de escrita para o arquivo
+            //stream cria uma conexao de escrita para o arquivo
             stream = new FileWriter(caminho);
-            //a classe PrintWriter escreverá no arquivo
+            
+            //a classe PrintWriter escreve no arquivo
             print = new PrintWriter(stream);
 
             for(String linha: conteudo){
 
-                //o método println escreve uma linha no arquivo
+                //o metodo println escreve uma linha no arquivo
                 print.println(linha);
             }
             //close fecha o arquivo
