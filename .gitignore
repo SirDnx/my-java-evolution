@@ -1,9 +1,9 @@
 .idea/
+.plugins/
+.metadata/
+.out/production/
 *.class
 *.iml
 *.css
 *.classpath
 *.project
-.plugins/
-.metadata/
-.out/
