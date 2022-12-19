@@ -2,5 +2,8 @@
 *.class
 *.iml
 *.css
+*.classpath
+*.project
 .plugins/
 .metadata/
+.out/
